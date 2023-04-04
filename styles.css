@@ -1,0 +1,201 @@
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: rgb(100, 105, 110);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+/*Navigation Setup*/
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 150px;
+    width: 20%;
+    border-right: 1px solid var(--color1);
+}
+
+.link-sec {
+    height: 80%;
+}
+
+
+
+.link-sec a:hover {
+    background-color: #353434;
+}
+
+.link-sec img {
+    width: 25px;
+    height: 25px;
+}
+
+figcaption {
+    display: inline-block;
+    font-weight: 800;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: rgb(87, 87, 255);
+}
+
+.nav a, .accnt-link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.nav a:hover {
+    border-radius: 5px;
+    background-color: #353434;
+}
+
+.accnt-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 20%;
+}
+
+.accnt-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+/*End of Navigation Setup*/
+
+
+/*Active Navigation setup*/
+.active-nav {
+    width: 50%;
+    border-right: 1px solid var(--color1);
+}
+
+.active-nav-sec, .create-post {
+    height: 15%;
+    border-bottom: 1px solid var(--color1);
+}
+
+.active-nav h3 {
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+}
+
+
+.algo-pref {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.algo-pref a {
+    color: var(--color1);
+}
+
+.algo-pref a:hover, :active {
+    color: #fff;
+}
+
+.create-post {
+    display: flex;
+    flex-direction: row;
+}
+
+.p {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5rem;
+    margin-left: 0.8rem;
+}
+
+.create-post p {
+    color: var(--color1);
+    font-size: larger;
+    margin-top: 1.4rem;
+    margin-left: 0.8rem;
+}
+
+
+/*Explore Section Setup*/
+.explore {
+    width: 30%;
+}
+
+
+/*Media Queries Setup*/
+@media (max-width: 550px) {
+    .explore {
+        display: none;
+    }
+    .active-nav {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 481px) {
+    .active-nav {
+        width: 80%;
+        border: none;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .link-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    figcaption{
+        display: none;
+    }
+    .link-sec a:hover {
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+/*<a href=""><img class="icon-img" src="./img/twitter.png" alt=""></a>
+                <a href=""><img class="nav-img" src="./img/home.png" alt=""><figcaption>Home</figcaption></a>
+                <a href=""><img class="nav-img" src="./img/search2.png" alt=""><figcaption>Explore</figcaption></a>
+                <a href=""><img class="nav-img" src="./img/bell.png" alt=""><figcaption>Notification</figcaption></a>
+                <a href=""><img class="nav-img" src="./img/list.png" alt=""><figcaption>Messages</figcaption></a>
+                <a href=""><img class="nav-img" src="./img/bkm.png" alt=""><figcaption>Bookmarks</figcaption></a>
+                <a href=""><img class="nav-img" src="./img/twitter-blue.png" alt=""><figcaption>Twitter Blue</figcaption></a>
+                <a href=""><img class="nav-img" src="./img/pro.png" alt=""><figcaption>Profile</figcaption></a>
+                <a href=""><img class="nav-img" src="./img/more.png" alt=""><figcaption>More</figcaption></a>*/
