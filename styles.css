@@ -43,8 +43,8 @@ nav a {
     display: table;
     width: 200px;
     padding: 10px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 nav a:hover {
