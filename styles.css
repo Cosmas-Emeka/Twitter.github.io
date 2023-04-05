@@ -101,10 +101,30 @@ nav span {
     }
     nav a {
         width: 0;
-        padding: 0px 10px 20px 10px;
     }
     nav a:hover {
         border-radius: 50%;
+    }
+}
+
+@media (max-width: 481px) {
+    .active-nav {
+        width: 80%;
+    }
+    nav {
+        width: 20%;
+    }
+    nav a {
+        left: 30%;
+    }
+}
+
+@media (max-width: 550px) {
+    .explore {
+        display: none;
+    }
+    .active-nav {
+        width: 90%;
     }
 }
 
