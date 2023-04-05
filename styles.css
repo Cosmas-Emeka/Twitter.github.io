@@ -28,7 +28,7 @@ body {
 .container nav, section {
     border-right: 2px solid #353434;
 }
-
+/* Navigation Setup */
 nav {
     position: fixed;
     height: 100vh;
@@ -76,14 +76,73 @@ nav span {
     width: 40px;
     height: 40px;
 }
+.accnt span {
+    display: flex;
+    flex-direction: column;
+    margin-top: -2.4rem;
+    margin-left: 4rem;
+}
 
 /* End of Navigation Setup*/
 
+/* Active Navigation setup */
 .active-nav {
     position: relative;
     left: 30%;
     width: 40%;
 }
+
+.active-nav-sec {
+    position: fixed;
+    left: 30%;
+}
+
+.active-nav-sec, .create-post {
+    height: 8rem;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.active-nav h3 {
+    margin-top: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+
+.algo-pref {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.algo-pref a {
+    color: var(--text-color);
+}
+
+.algo-pref a:hover, :active {
+    color: #fff;
+}
+
+.create-post {
+    display: flex;
+    flex-direction: row;
+}
+
+.p {
+    width: 50px;
+    height: 50px;
+    margin-top: 0.5rem;
+    margin-left: 0.8rem;
+}
+
+.create-post p {
+    color: var(--text-color);
+    font-size: larger;
+    margin-top: 1.4rem;
+    margin-left: 0.8rem;
+}
+
+/* End of Active Navigation Setup*/
 
 .explore {
     position: relative;
@@ -96,7 +155,7 @@ nav span {
 
 /* Media Queries*/
 @media (max-width: 1300px) {
-    nav span{
+    nav span, .accnt span{
         display: none;
     }
     nav a {
@@ -121,21 +180,7 @@ nav span {
     .explore {
         display: none;
     }
-    nav img {
-        width: 15px;
-        height: 15px;
-    }
-    .accnt img {
-        width: 20px;
-        height: 20px;
-        margin-left: 0.4rem;
-    }
 }
-
-@media (max-width: 550px) {
-
-}
-
 
 /*
 nav:hover {
