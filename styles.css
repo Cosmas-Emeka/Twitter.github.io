@@ -31,7 +31,7 @@ body {
 
 nav {
     position: fixed;
-    height: 100%;
+    height: 100vh;
     left: 0;
     width: 30%;
 }
@@ -67,8 +67,8 @@ nav span {
 }
 
 .accnt {
-    position: absolute;
-    bottom: 0;
+    margin-top: 3rem;
+    margin-left: -0.5rem;
 }
 
 .accnt img {
@@ -110,22 +110,21 @@ nav span {
 @media (max-width: 481px) {
     .active-nav {
         width: 80%;
+        left: 20%;
     }
     nav {
         width: 20%;
     }
     nav a {
-        left: 30%;
+        left: 28%;
+    }
+    .explore {
+        display: none;
     }
 }
 
 @media (max-width: 550px) {
-    .explore {
-        display: none;
-    }
-    .active-nav {
-        width: 90%;
-    }
+
 }
 
 
