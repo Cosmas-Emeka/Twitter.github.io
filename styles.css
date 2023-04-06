@@ -29,14 +29,14 @@ body {
     border-right: 2px solid #353434;
 }
 /* Navigation Setup */
-nav {
+.general-nav {
     position: fixed;
     height: 100vh;
     left: 0;
     width: 30%;
 }
 
-nav a {
+.general-nav a {
     position: relative;
     left: 38%;
     color: var(--nav-text-color);
@@ -47,19 +47,19 @@ nav a {
     margin-bottom: 10px;
 }
 
-nav a:hover {
+.general-nav a:hover {
     border-radius: 10px;
     background-color: #353434;
 }
 
-nav img {
+.general-nav img {
     position: relative;
     width: 25px;
     height: 25px;
 
 }
 
-nav span {
+.general-nav span {
     position: relative;
     top: -5px;
     margin-left: 1.8rem;
@@ -92,62 +92,20 @@ nav span {
     width: 40%;
 }
 
-.active-nav-sec {
+.algo-pref-nav {
     position: fixed;
-    left: 30%;
+    width: 100%;
 }
 
-.active-nav-sec, .create-post {
-    height: 8rem;
-    border-bottom: 1px solid var(--text-color);
+.active-nav li {
+    list-style-type: none;
 }
-
-.active-nav h3 {
-    margin-top: 0.8rem;
-    margin-left: 0.5rem;
-}
-
-
-.algo-pref {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 4rem;
-}
-
-.algo-pref a {
-    color: var(--text-color);
-}
-
-.algo-pref a:hover, :active {
-    color: #fff;
-}
-
-.create-post {
-    display: flex;
-    flex-direction: row;
-}
-
-.p {
-    width: 50px;
-    height: 50px;
-    margin-top: 0.5rem;
-    margin-left: 0.8rem;
-}
-
-.create-post p {
-    color: var(--text-color);
-    font-size: larger;
-    margin-top: 1.4rem;
-    margin-left: 0.8rem;
-}
-
 /* End of Active Navigation Setup*/
 
 .explore {
-    position: relative;
+    position: absolute;
     width: 30%;
-    left: 30%;
+    left: 70%;
     border: none;
 }
 
@@ -155,13 +113,13 @@ nav span {
 
 /* Media Queries*/
 @media (max-width: 1300px) {
-    nav span, .accnt span{
+    .general-nav span, .accnt span{
         display: none;
     }
-    nav a {
+    .general-nav a {
         width: 0;
     }
-    nav a:hover {
+    .general-nav a:hover {
         border-radius: 50%;
     }
 }
@@ -171,10 +129,10 @@ nav span {
         width: 80%;
         left: 20%;
     }
-    nav {
+    .general-nav {
         width: 20%;
     }
-    nav a {
+    .general-nav a {
         left: 28%;
     }
     .explore {
