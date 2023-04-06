@@ -89,7 +89,7 @@ body {
 .active-nav {
     position: relative;
     left: 30%;
-    width: 40%;
+    width: 40rem;
 }
 
 .algo-pref-nav {
@@ -97,8 +97,18 @@ body {
     width: 100%;
 }
 
+.algo-pref-nav h3 {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
 .active-nav li {
     list-style-type: none;
+    margin-left: 4rem;
+}
+
+.active-nav ul {
+    display: flex;
 }
 /* End of Active Navigation Setup*/
 
