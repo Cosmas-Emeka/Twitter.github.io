@@ -57,6 +57,11 @@ nav, section {
 }
 
 
+.fa-twitter {
+    margin-left: -3px;
+}
+
+
 .sidebar span {
     position: relative;
     margin-left: 1.8rem;
