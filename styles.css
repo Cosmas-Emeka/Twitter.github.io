@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;   
-    outline: none;
     border: none;
     text-decoration: none;
     box-sizing: border-box;
@@ -25,7 +24,7 @@ body {
 }
 
 
-nav, section {
+.sidebar, section {
     border-right: 2px solid #353434;
 }
 
@@ -33,7 +32,7 @@ nav, section {
 /* --------------- Navigation Setup ---------------- */
 .sidebar {
     position: fixed;
-    height: 90vh;
+    height: 100vh;
     left: 0;
     width: 30%;
 }
@@ -44,7 +43,7 @@ nav, section {
     left: 38%;
     color: var(--twitter-color);
     display: table;
-    width: 200px;
+    width: 180px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -57,84 +56,15 @@ nav, section {
 }
 
 
-.fa-twitter {
-    margin-left: -3px;
-}
-
-
 .sidebar span {
     position: relative;
-    margin-left: 1.8rem;
+    margin-left: 1.5rem;
     font-size: 1.2rem;
     color: #fff;
 }
 
 
-.accnt {
-    margin-top: 3rem;
-    margin-left: -0.5rem;
-}
-
-
-.accnt img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-left: -3px;
-}
-
-
-.accnt span {
-    display: flex;
-    flex-direction: column;
-    margin-top: -2.4rem;
-    margin-left: 4rem;
-}
-
-
-/* ----------------- Active Navigation setup ---------------- */
-.active-nav {
-    position: relative;
-    left: 30%;
-    width: 40rem;
-}
-
-
-.algo-pref-nav {
-    position: fixed;
-    width: 100%;
-}
-
-
-.algo-pref-nav h3 {
-    margin-left: 3rem;
-    margin-top: 1rem;
-}
-
-
-.active-nav li {
-    list-style-type: none;
-    margin-left: 4rem;
-}
-
-
-.active-nav ul {
-    display: flex;
-}
-
-
-
-.explore {
-    position: absolute;
-    width: 30%;
-    left: 70%;
-    border: none;
-}
-
-
-
-/* Media Queries*/
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
     .sidebar span, .accnt span{
         display: none;
     }
@@ -146,25 +76,112 @@ nav, section {
     }
 }
 
-@media (max-width: 481px) {
-    .active-nav {
-        width: 80%;
-        left: 20%;
-    }
+
+@media (max-width: 500px) {
     .sidebar {
         width: 20%;
     }
     .sidebar a {
         left: 28%;
     }
-    .explore {
+
+}
+
+
+.accnt {
+    margin-top: 3rem;
+    margin-left: -0.5rem;
+}
+
+
+.accnt img,.accnt-img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+
+.accnt span {
+    display: flex;
+    flex-direction: column;
+    margin-top: -2.4rem;
+    margin-left: 4rem;
+}
+
+
+@media (max-width: 1300px) {
+    .accnt span{
         display: none;
     }
 }
 
-/*
-nav:hover {
-    width: 280px;
-    transition: all 0.5s ease;
+
+/* ----------------- Feed section ---------------- */
+.feed {
+    position: relative;
+    left: 30%;
+    width: 50%;
+    margin-bottom: -40rem;
 }
-*/
+
+
+@media (max-width: 500px) {
+    .feed {
+        width: 80%;
+        left: 20%;
+    }
+}
+
+
+.feed-algo {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--text-color);
+}
+
+
+.feed-algo h3 {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+
+.algo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.algo a {
+    color: var(--text-color);
+    font-weight: bolder;
+}
+
+
+.algo a::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: block;
+    margin-top: 10px;
+    background: var(--twitter-color);
+    border-radius: 2px;
+}
+
+
+.explore {
+    position: absolute;
+    width: 20%;
+    left: 80%;
+    border: none;
+}
+
+
+@media (max-width: 500px) {
+    .explore {
+        display: none;
+    }
+}

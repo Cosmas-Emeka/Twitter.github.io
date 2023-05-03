@@ -1,0 +1,65 @@
+<section class="active-nav">
+    <div class="algo-pref-nav">
+        <h3>Home</h3>
+        <nav class="algo-pref">
+            <ul>
+                <li><a href="">For You</a></li>
+                <li><a href="">Following</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+<section class="explore">
+    <p>dfvfedwedw</p>
+</section>
+* .active-nav {
+    position: relative;
+    left: 30%;
+    width: 40rem;
+}
+
+
+.algo-pref-nav {
+    position: fixed;
+    width: 100%;
+}
+
+
+.algo-pref-nav h3 {
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+
+.active-nav li {
+    list-style-type: none;
+    margin-left: 4rem;
+}
+
+
+.active-nav ul {
+    display: flex;
+}
+
+
+
+.explore {
+    position: absolute;
+    width: 30%;
+    left: 70%;
+    border: none;
+}
+
+
+
+/* Media Queries*/
+
+
+
+
+/*
+nav:hover {
+    width: 280px;
+    transition: all 0.5s ease;
+}
+*/
