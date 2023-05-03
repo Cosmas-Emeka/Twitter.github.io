@@ -7,39 +7,42 @@
     box-sizing: border-box;
 }
 
+
+:root {
+    --twitter-color: #50b7f5;
+    --text-color: rgb(100, 105, 110);
+}
+
+
 body {
     background: #000;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-:root {
-    --text-color: rgb(100, 105, 110);
-    --nav-text-color: rgb(149, 149, 255);
-}
-
-.container {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100vh;
 }
 
-.container nav, section {
+
+nav, section {
     border-right: 2px solid #353434;
 }
-/* Navigation Setup */
-.general-nav {
+
+
+/* --------------- Navigation Setup ---------------- */
+.sidebar {
     position: fixed;
     height: 100vh;
     left: 0;
     width: 30%;
 }
 
-.general-nav a {
+
+.sidebar a {
     position: relative;
     left: 38%;
-    color: var(--nav-text-color);
+    color: var(--twitter-color);
     display: table;
     width: 200px;
     padding: 10px;
@@ -47,35 +50,35 @@ body {
     margin-bottom: 10px;
 }
 
-.general-nav a:hover {
+
+.sidebar a:hover {
     border-radius: 10px;
     background-color: #353434;
 }
 
-.general-nav img {
-    position: relative;
-    width: 25px;
-    height: 25px;
 
-}
-
-.general-nav span {
+.sidebar span {
     position: relative;
-    top: -5px;
     margin-left: 1.8rem;
     font-size: 1.2rem;
+    color: #fff;
 }
+
 
 .accnt {
     margin-top: 3rem;
     margin-left: -0.5rem;
 }
 
+
 .accnt img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    margin-left: -3px;
 }
+
+
 .accnt span {
     display: flex;
     flex-direction: column;
@@ -83,34 +86,38 @@ body {
     margin-left: 4rem;
 }
 
-/* End of Navigation Setup*/
 
-/* Active Navigation setup */
+/* ----------------- Active Navigation setup ---------------- */
 .active-nav {
     position: relative;
     left: 30%;
     width: 40rem;
 }
 
+
 .algo-pref-nav {
     position: fixed;
     width: 100%;
 }
+
 
 .algo-pref-nav h3 {
     margin-left: 3rem;
     margin-top: 1rem;
 }
 
+
 .active-nav li {
     list-style-type: none;
     margin-left: 4rem;
 }
 
+
 .active-nav ul {
     display: flex;
 }
-/* End of Active Navigation Setup*/
+
+
 
 .explore {
     position: absolute;
@@ -123,13 +130,13 @@ body {
 
 /* Media Queries*/
 @media (max-width: 1300px) {
-    .general-nav span, .accnt span{
+    .sidebar span, .accnt span{
         display: none;
     }
-    .general-nav a {
+    .sidebar a {
         width: 0;
     }
-    .general-nav a:hover {
+    .sidebar a:hover {
         border-radius: 50%;
     }
 }
@@ -139,10 +146,10 @@ body {
         width: 80%;
         left: 20%;
     }
-    .general-nav {
+    .sidebar {
         width: 20%;
     }
-    .general-nav a {
+    .sidebar a {
         left: 28%;
     }
     .explore {
