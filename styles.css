@@ -43,7 +43,6 @@ body {
     left: 38%;
     color: var(--twitter-color);
     display: table;
-    width: 180px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -51,7 +50,7 @@ body {
 
 
 .sidebar a:hover {
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: #353434;
 }
 
@@ -134,9 +133,15 @@ body {
 
 
 .feed-algo {
+    position: fixed;
+    top: 0;
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--text-color);
+    width: inherit;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid var(--text-color);
+    opacity: 90%;
+
 }
 
 
@@ -149,7 +154,7 @@ body {
 .algo {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; 
     align-items: center;
     margin-top: 1rem;
 }
