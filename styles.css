@@ -104,7 +104,14 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: -2.4rem;
-    margin-left: 4rem;
+    margin-left: 3.2rem;
+}
+
+
+.p-small {
+    color: var(--text-color);
+    font-size: smaller;
+    margin-left: -1px;
 }
 
 
@@ -193,7 +200,8 @@ body {
 
 
 .create-post img {
-    width: 50px;
+    width: 60px;
+    max-width: 60px;
     height: 50px;
     border-radius: 50%;
 }
