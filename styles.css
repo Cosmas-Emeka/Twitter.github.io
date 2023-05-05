@@ -25,7 +25,7 @@ body {
 
 
 .sidebar, section {
-    border-right: 2px solid #353434;
+    border-right: 1px solid var(--text-color);
 }
 
 
@@ -76,12 +76,12 @@ body {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .sidebar {
-        width: 20%;
+        width: 0;
     }
     .sidebar a {
-        left: 28%;
+        left: 0;
     }
 
 }
@@ -108,7 +108,7 @@ body {
 }
 
 
-.p-small {
+.unique-username {
     color: var(--text-color);
     font-size: smaller;
     margin-left: -1px;
@@ -122,6 +122,39 @@ body {
 }
 
 
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        z-index: 100;
+    }
+    .sidebar ul {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        border-top: 1px solid var(--text-color);
+        width: 100%;
+        z-index: 1000;
+        background: #000;
+    }
+    .sidebar ul li:nth-child(6),
+    .sidebar ul li:nth-child(7),
+    .sidebar ul li:nth-child(8),
+    .sidebar ul li:nth-child(9),
+    .sidebar ul li:nth-child(10),
+    .sidebar ul li:nth-child(11),
+    .sidebar ul li:nth-child(12) {
+        display: none;
+    }
+    #logo {
+        position: absolute;
+        top: 10rem;
+    }
+}
+
+
 /* ----------------- Feed section ---------------- */
 .feed-section {
     position: relative;
@@ -131,10 +164,10 @@ body {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .feed-section {
-        width: 80%;
-        left: 20%;
+        width: 100%;
+        left: 0;
     }
 }
 
@@ -196,6 +229,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+    margin-bottom: 60rem;
 }
 
 
@@ -221,7 +255,6 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--twitter-color);
-    cursor: pointer;
     padding: 4px 8px;
     border: 1px solid var(--text-color);
     border-radius: 20px;
@@ -250,6 +283,10 @@ textarea {
     border-bottom: 1px solid var(--text-color);
 }
 
+
+.post-attachments {
+    color: var(--twitter-color);
+}
 
 
 
@@ -295,9 +332,10 @@ textarea {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .explore {
         display: none;
+        position: static;
     }
 }
 

@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="./img/twitter.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <!-- ----------- sidebar ------------- -->
     <nav class="sidebar">
         <ul>
-            <li>
+            <li id="logo">
                 <a href="#">
-                    <i class="fab fa-twitter fa-2x"></i>
+                    <i class="fab fa-twitter"></i>
                     <span></span>
                 </a>
             </li>
@@ -56,10 +56,12 @@
                     <span>Lists</span>
                 </a>
             </li>
-            <a href="#">
-                <i class="fab fa-twitter-square"></i>
-                <span>Twitter Blue</span>
-            </a>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter-square"></i>
+                    <span>Twitter Blue</span>
+                </a>
+            </li>
             <li>
                 <a href="#">
                     <i class="fa fa-user"></i>
@@ -83,7 +85,7 @@
                     <img src="./img/me.jpeg" alt="">
                     <span>
                         <p>Emeka</p>
-                        <p class="p-small">@Emekanaki</p>
+                        <p class="unique-username">@Emekanaki</p>
                     </span>
                 </a>
             </li>
@@ -109,9 +111,16 @@
                     </a>
                     <textarea name="" id="" placeholder="What's happening?"></textarea>
                     <div class="post-attachments">
-                        <i class="fab fa-file-image-o"></i>
+                        <i class="fa fa-camera"></i>
+                        <i class="fa fa-location-arrow"></i>
+                        <i class="fa fa-paperclip"></i>
+                        <i class="fa fa-smile-o"></i>
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
                     </div>
                 </div>
+            </div>
+            <div class="test">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae libero repudiandae eos nesciunt delectus voluptate quam consequatur, dolorem obcaecati cumque, provident reprehenderit amet aperiam architecto unde aliquid, voluptatibus ipsum!</p>
             </div>
         </div>
     </section>
