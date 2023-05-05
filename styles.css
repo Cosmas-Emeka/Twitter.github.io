@@ -140,12 +140,13 @@ body {
         bottom: 0;
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-around;
         border-top: 1px solid var(--text-color);
         width: 100%;
         z-index: 1000;
         background: #000;
-        height: none;
+        height: 60px;
     }
     .sidebar ul li:nth-child(6),
     .sidebar ul li:nth-child(7),
@@ -155,10 +156,6 @@ body {
     .sidebar ul li:nth-child(11),
     .sidebar ul li:nth-child(12) {
         display: none;
-    }
-    #logo {
-        position: absolute;
-        top: 10rem;
     }
 
 }
@@ -191,9 +188,16 @@ body {
     flex-direction: column;
     opacity: 80%;
     background: #000;
-    z-index: 100;
+    z-index: 1;
 }
 
+@media (max-width: 600px) {
+    #logo {
+        position: absolute;
+        top: -47.9rem;
+        z-index: 2;
+    }
+}
 
 .feed-algo h3 {
     margin-top: 1rem;
@@ -211,6 +215,7 @@ body {
 @media (max-width: 600px) {
     .mb {
         display: block;
+        z-index: 3;   
     }
 }
 
