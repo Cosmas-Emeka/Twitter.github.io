@@ -4,6 +4,7 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
+    list-style: none;
 }
 
 
@@ -49,6 +50,13 @@ body {
 }
 
 
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
 .sidebar a:hover {
     border-radius: 30px;
     background-color: #353434;
@@ -88,7 +96,6 @@ body {
 
 
 .accnt {
-    margin-top: 3rem;
     margin-left: -0.5rem;
 }
 
@@ -133,7 +140,6 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        list-style: none;
         border-top: 1px solid var(--text-color);
         width: 100%;
         z-index: 1000;
@@ -152,6 +158,7 @@ body {
         position: absolute;
         top: 10rem;
     }
+
 }
 
 
