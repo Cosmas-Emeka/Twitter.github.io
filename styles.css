@@ -26,9 +26,7 @@ body {
 }
 
 
-.sidebar, section {
-    border-right: 1px solid var(--text-color);
-}
+
 
 
 /* --------------- Navigation Setup ---------------- */
@@ -353,12 +351,12 @@ textarea {
     width: 40%;
 }
 
+
 .post-attachments button {
     width: 60px;
     padding: 3px;
     border-radius: 10px;
     background: var(--twitter-color);
-    cursor: pointer;
 }
 
 
@@ -419,7 +417,6 @@ textarea {
 .user-names i:hover {
     border-radius: 50%;
     color: var(--twitter-color);
-    cursor: pointer;
 }
 
 
