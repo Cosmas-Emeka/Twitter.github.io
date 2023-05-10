@@ -14,7 +14,7 @@
     <!-- ----------- sidebar ------------- -->
     <nav class="sidebar">
         <ul>
-            <li id="logo">
+            <li>
                 <a href="#">
                     <i class="fab fa-twitter fa-2x"></i>
                     <span></span>
@@ -96,7 +96,12 @@
     <section class="feed-section">
         <div class="feed-algo">
             <h3>Home</h3>
-            <img class="accnt-img mb" src="./img/me.jpeg" alt="">
+            <div class="logo-wrapper">
+                <img class="accnt-img mb" src="./img/me.jpeg" alt="">
+                <a href="#" id="logo">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </div>
             <nav class="algo">
                 <a href="" id="algoForYou" onclick="forYou()">For You</a>
                 <a href="" id="algoFollowing" onclick="following()">Following</a>
@@ -112,16 +117,29 @@
                     </a>
                     <textarea name="" id="" placeholder="What's happening?"></textarea>
                     <div class="post-attachments">
-                        <i class="fa fa-camera"></i>
-                        <i class="fa fa-location-arrow"></i>
-                        <i class="fa fa-paperclip"></i>
-                        <i class="fa fa-smile-o"></i>
-                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                        <div>
+                            <i class="fa fa-camera"></i>
+                            <i class="fa fa-location-arrow"></i>
+                            <i class="fa fa-paperclip"></i>
+                            <i class="fa fa-address-card" aria-hidden="true"></i>
+                        </div>
+                        <button>Tweet</button>
                     </div>
                 </div>
             </div>
-            <div class="test">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestiae libero repudiandae eos nesciunt delectus voluptate quam consequatur, dolorem obcaecati cumque, provident reprehenderit amet aperiam architecto unde aliquid, voluptatibus ipsum!</p>
+            <div class="news">
+                <img src="./img/me.jpeg" alt="">
+                <div class="news-col">
+                    <div class="user-names">
+                        <div class="name-row">
+                            <h4>Emeka</h4>
+                            <img src="./img/blue-tick.png" alt="">
+                            <p>@Emekanaki . 6h</p>
+                        </div>
+                        <i class="fa fa-ellipsis-h more"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos odio et dolores maiores. Esse magni at, consequuntur tenetur iusto alias ipsam culpa, fugiat dolorem ad, expedita atque ducimus quas ratione.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -138,19 +156,3 @@
     <script src="app.js"></script>
 </body>
 </html>
-
-            <!--
-           </div>
-           <div class="create-post">
-                <img class="accnt-img p" src="./img/me.jpeg" alt="">
-                <p>What's happening?</p>
-           </div>
-<form action="">
-            <div class="tweetbox-input">
-                <img class="accnt-img" src="./img/me.jpeg" alt="">
-                <input type="text" placeholder="What's happening?">
-            </div>
-            <button class="tweet-btn"></button>
-        </form>
-
-            -->
