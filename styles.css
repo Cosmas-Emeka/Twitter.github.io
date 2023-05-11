@@ -10,7 +10,7 @@
 
 
 :root {
-    --twitter-color: #50b7f5;
+    --twitter-color: #ffff;
     --text-color: rgb(100, 105, 110);
 }
 
@@ -222,7 +222,7 @@ i, a, button {
         display: block;
         position: relative;
         top: 5px;
-        left: 40%;
+        left: 38%;
         padding: 5px;
         color: var(--twitter-color);
     }
@@ -390,7 +390,7 @@ textarea {
     width: 100%;
     gap: 1.5rem;
     border-bottom: 1px solid var(--text-color);
-    padding: 1rem;
+    padding: 2rem;
 }
 
 
@@ -400,6 +400,13 @@ textarea {
     justify-content: space-evenly;
     width: 94%;
     gap: 0.5rem;
+}
+
+
+.news-col h4, .news-col p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
