@@ -306,6 +306,11 @@ i, a, button {
 }
 
 
+.fa-arrow-left:hover {
+    color: var(--twitter-color);
+}
+
+
 .create-post {
     display: flex;
     flex-direction: row;
