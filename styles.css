@@ -177,6 +177,14 @@ i, a, button {
 }
 
 
+@media (max-width: 830px) {
+    .feed-section {
+        width: 70%;
+    }
+}
+
+
+
 @media (max-width: 600px) {
     .feed-section {
         width: 100%;
@@ -185,7 +193,6 @@ i, a, button {
         border-right: none;
     }
 }
-
 
 .feed-algo {
     position: fixed;
@@ -288,6 +295,12 @@ i, a, button {
     flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
+    border-bottom: 1px solid var(--text-color);
+}
+
+
+.fa-arrow-left {
+    display: none;
 }
 
 
@@ -303,11 +316,12 @@ i, a, button {
         align-items: start;
         transition: 0.8s;
     }
-}
-
-
-.fa-arrow-left:hover {
-    color: var(--twitter-color);
+    .fa-arrow-left {
+        display: block;
+    }
+    .fa-arrow-left:hover {
+        color: var(--twitter-color);
+    }
 }
 
 
@@ -423,7 +437,7 @@ textarea {
 }
 
 
-.news-col h4, .news-col p {
+.news-col h4 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -519,15 +533,23 @@ textarea {
 
 
 #postTweet {
+    display: none;
     width: 45px;
     height: 45px;
     padding: 7px;
     border-radius: 50%;
     position: fixed;
-    bottom: 4rem;
+    bottom: 5rem;
     left: 80%;
     background: var(--text-color);
     cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    #postTweet {
+        display: block;
+    }
 }
 
 
@@ -563,11 +585,10 @@ textarea {
     position: absolute;
     width: 20%;
     left: 80%;
-    border: none;
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 748px) {
     .explore {
         display: none;
         position: static;
@@ -592,3 +613,8 @@ textarea {
 
 
 
+@media (max-width: 481px) {
+    * {
+        font-size: small;
+    }
+}
