@@ -138,6 +138,7 @@ i, a, button {
         width: 100%;
         transition: 2s;
         z-index: 4;
+        height: 0;
     }
     .sidebar ul {
         position: fixed;
@@ -205,7 +206,6 @@ i, a, button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
 
 
@@ -220,6 +220,9 @@ i, a, button {
     }
     #logo {
         display: block;
+        position: relative;
+        top: 5px;
+        left: 40%;
         padding: 5px;
         color: var(--twitter-color);
     }
@@ -239,7 +242,9 @@ i, a, button {
 @media (max-width: 600px) {
     .mb {
         display: block;
-        margin-right: 60vw;
+        position: relative;
+        top: 5px;
+        left: 2rem;
     }
 }
 
@@ -285,6 +290,13 @@ i, a, button {
     width: 100%;
     border-bottom: 1px solid var(--text-color);
     padding: 1rem;
+}
+
+
+@media (max-width: 600px) {
+    .create-post {
+        display: none;
+    }
 }
 
 
