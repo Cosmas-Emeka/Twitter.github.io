@@ -108,22 +108,25 @@
             </nav>
         </div>
         <div class="feed">
-            <div class="create-post">
-                <img src="./img/me.jpeg" alt="">
-                <div class="post">
-                    <a href="">
-                        <p>Everyone</p>
-                        <i class="fa fa-angle-down"></i>
-                    </a>
-                    <textarea name="" id="" placeholder="What's happening?"></textarea>
-                    <div class="post-attachments">
-                        <div>
-                            <i class="fa fa-camera"></i>
-                            <i class="fa fa-location-arrow"></i>
-                            <i class="fa fa-paperclip"></i>
-                            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <div id="createPostWrapper">
+                <i id="" onclick="hideTweet()" class="fa fa-arrow-left"></i>
+                <div class="create-post">
+                    <img src="./img/me.jpeg" alt="">
+                    <div class="post">
+                        <a href="">
+                            <p>Everyone</p>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <textarea name="" id="" placeholder="What's happening?"></textarea>
+                        <div class="post-attachments">
+                            <div>
+                                <i class="fa fa-camera"></i>
+                                <i class="fa fa-location-arrow"></i>
+                                <i class="fa fa-paperclip"></i>
+                                <i class="fa fa-address-card" aria-hidden="true"></i>
+                            </div>
+                            <button>Tweet</button>
                         </div>
-                        <button>Tweet</button>
                     </div>
                 </div>
             </div>
@@ -273,6 +276,7 @@
                 </div>
             </div>
         </div>
+        <img id="postTweet" onclick="addTweet()" src="./img/add-tweet.png" alt="">
     </section>
 
     <!-- ------------- Explore ----------------- -->

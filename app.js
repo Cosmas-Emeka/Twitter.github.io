@@ -1,11 +1,18 @@
-var algoForYou = document.getElementById("algoForYou");
-var algoFollowing = document.getElementById("algoFollowing");
+var createPostWrapper = document.getElementById("createPostWrapper");
+var postTweet = document.getElementById("postTweet");
 
 
-function algoForYou() {
-    algoForYou.width = "100%"
+function addTweet() {
+  createPostWrapper.style.left = "0";
 }
 
+
+function hideTweet() {
+  createPostWrapper.style.left = "-100%";
+}
+
+
+/*
 function truncateString(str, num) {
     if (str.length > num) {
      let truncate = str.slice(0, num) + "...";
@@ -14,3 +21,4 @@ function truncateString(str, num) {
     return str
     }
   }
+  */
