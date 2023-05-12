@@ -429,6 +429,9 @@ textarea {
 
 .my-pic {
     width: 15%;
+    max-width: 50px;
+    height: 50px;
+    max-height: 60px;
 }
 
 
@@ -537,28 +540,36 @@ textarea {
 
 #postTweet {
     display: none;
-    width: 45px;
-    height: 45px;
-    padding: 7px;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 5rem;
-    left: 80%;
-    background: var(--text-color);
-    cursor: pointer;
 }
 
 
 @media (max-width: 600px) {
     #postTweet {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 2px;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 5rem;
+        left: 80%;
+        background: var(--twitter-color);
+        cursor: pointer;
     }
 }
 
 
+#postTweet img:nth-child(1) {
+    width: 20px;
+    height: 20px;
+}
 
 
-
+#postTweet img:nth-child(2) {
+    width: 30px;
+    height: 30px;
+}
 
 
 
