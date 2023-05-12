@@ -613,7 +613,7 @@ textarea {
 .explore input {
     display: block;
     margin: 0 auto;
-    align-items: center;
+    color: #fff;
     width: 90%;
     height: 30px;
     border-radius: 10px;
@@ -672,9 +672,11 @@ textarea {
 }
 
 
+
+
 .trends p {
     font-size: 12px;
-    color: var(--text-color);
+    color: #ffffff9c;
 }
 
 
