@@ -19,7 +19,7 @@
 body {
     background: #000;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -63,6 +63,7 @@ i, a, button {
 .sidebar a:hover , #logo:hover {
     border-radius: 30px;
     background-color: #353434;
+    transition: 0.2s;
 }
 
 
@@ -285,7 +286,7 @@ i, a, button {
 
 .feed {
     position: relative;
-    top: 6.6rem;
+    top: 7.5rem;
     margin-bottom: 40rem;
 }
 
@@ -299,7 +300,7 @@ i, a, button {
 }
 
 
-.fa-arrow-left {
+#arrow-left {
     display: none;
 }
 
@@ -316,7 +317,7 @@ i, a, button {
         align-items: start;
         transition: 0.8s;
     }
-    .fa-arrow-left {
+    #createPostWrapper i:nth-child(1) {
         display: block;
     }
     .fa-arrow-left:hover {
@@ -335,7 +336,7 @@ i, a, button {
 
 
 .create-post img, .my-pic {
-    width: 60px;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
 }
@@ -428,8 +429,13 @@ textarea {
 }
 
 
+.news a:nth-child(1) {
+    height: fit-content;
+}
+
+
 .my-pic {
-    width: 15%;
+    width: 100%;
     max-width: 50px;
     height: 50px;
     max-height: 60px;
@@ -446,8 +452,15 @@ textarea {
 
 
 .news-col h4 {
+    color: #fff;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+
+.news-col h4:hover {
+    text-decoration: underline;
+    color: #fff;
 }
 
 
@@ -499,6 +512,15 @@ textarea {
 .user-names i:hover {
     border-radius: 50%;
     color: var(--twitter-color);
+}
+
+
+.news-video {
+    width: 98%;
+    height: 98%;
+    max-height: 400px;
+    border-radius: 15px;
+    border: 1px solid var(--text-color);
 }
 
 
@@ -593,7 +615,7 @@ textarea {
 }
 
 
-@media (max-width: 830px) {
+@media (max-width: 1186px) {
     .explore {
         display: none;
     }
@@ -625,15 +647,13 @@ textarea {
 
 
 .trends-col {
-    position: relative;
-    top: 5rem;
     color: #fff;
     background: var(--sub-text-color);
     width: 117%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 10px;
-    margin-bottom: 70rem;
+    margin-top: 4rem;
 }
 
 
@@ -672,18 +692,166 @@ textarea {
 }
 
 
-
-
 .trends p {
     font-size: 12px;
     color: #ffffff9c;
 }
 
 
+.follow {
+    width: 117%;
+    padding-top: 1rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    background: var(--sub-text-color);
+}
 
 
+.follow h3 {
+    margin-left: 10%;
+    margin-bottom: 1rem;
+}
 
 
+.follow-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    gap: 0.5rem;
+}
+
+
+.follow :hover {
+    background: rgb(61, 62, 62);
+    transition: 2s;
+    cursor: pointer;
+}
+
+
+.follow-row img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.follow-names {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+
+.follow-names div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.follow-names a {
+    overflow: hidden;
+    color: #fff;
+}
+
+
+.follow-names h5 {
+    font-size: 13px;
+    font-weight: 900;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.follow-names h5:hover {
+    text-decoration: underline;
+}
+
+
+.follow-names p {
+    color: var(--text-color);
+    font-size: 14px;
+    margin-left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.follow-button {
+    width: 60px;
+    max-width: 80px;
+    height: fit-content;
+    padding: 6px 8px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    background: #fff;
+    color: #000;
+}
+
+
+.follow-button:hover {
+    background: #fff;
+}
+
+
+.show-more {
+    width: 100%;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+
+.show-more a {
+    color: var(--twitter-color);
+}
+
+
+#msg {
+    position: fixed;
+    bottom: -27rem;
+    right: 2rem;
+    width: 400px;
+    height: 500px;
+    background: #000;
+    border-radius: 15px;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    transition: 0.8s;
+}
+
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.top-row div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.top-row div i {
+    border-radius: 50%;
+    padding: 8px;
+}
+
+
+.top-row i:hover {
+    background: var(--text-color);
+}
+
+
+#angleDown {
+    display: none;
+}
 
 
 
