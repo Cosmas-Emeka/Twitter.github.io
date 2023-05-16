@@ -14,14 +14,14 @@ function hideTweet() {
 
 
 function msgUp() {
-  msg.style.bottom = "-0.7rem";
+  msg.style.bottom = "-0.8rem";
   angleUp.style.display = "none";
   angleDown.style.display = "flex";
 }
 
 
 function msgDown() {
-  msg.style.bottom = "-27rem";
+  msg.style.bottom = "-28rem";
   angleUp.style.display = "flex";
   angleDown.style.display = "none";
 }
