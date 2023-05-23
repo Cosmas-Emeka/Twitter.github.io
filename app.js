@@ -2,9 +2,11 @@ var createPostWrapper = document.getElementById("createPostWrapper");
 var msg = document.getElementById("msg");
 var angleUp = document.getElementById("angleUp");
 var angleDown = document.getElementById("angleDown");
+var postTweet = document.getElementById("postTweet");
 
 function addTweet() {
   createPostWrapper.style.left = "0";
+  postTweet.style.transform = "150deg"
 }
 
 
