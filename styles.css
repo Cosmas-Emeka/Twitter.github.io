@@ -231,6 +231,11 @@ i, a, button {
 }
 
 
+#logo i {
+    color: #fff;
+}
+
+
 @media (max-width: 600px) {
     .feed-algo {
         border-right: none;
@@ -290,6 +295,11 @@ i, a, button {
     margin-top: 1rem;
     background: var(--twitter-color);
     border-radius: 3px;
+}
+
+
+.algo a:nth-child(2)::after {
+    background: #000;
 }
 
 
@@ -455,7 +465,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 85%;
+    width: 80%;
     gap: 0.5rem;
 }
 
@@ -505,7 +515,8 @@ textarea {
 
 
 .name-row div, .message-names div div {
-    width: 3px;
+    width: 5px;
+    max-width: 3px;
     height: 3px;
     border-radius: 50%;
     background: var(--text-color);
@@ -601,31 +612,22 @@ textarea {
 
 @media (max-width: 600px) {
     #postTweet {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 12px 2px;
+        display: block;
+        padding: 0.5rem 0.5rem;
         border-radius: 50%;
         position: fixed;
-        bottom: 5rem;
-        left: 80%;
+        bottom: 6rem;
+        left: 84%;
         background: var(--twitter-color);
         cursor: pointer;
     }
 }
 
 
-#postTweet img:nth-child(1) {
-    width: 20px;
-    height: 20px;
+#postTweet i {
+    color: #000;
 }
 
-
-#postTweet img:nth-child(2) {
-    width: 30px;
-    height: 30px;
-}
 
 
 /* ---------------------- Explore Section ----------------------------- */
@@ -804,8 +806,7 @@ textarea {
 }
 
 
-.follow-names h5 {
-    font-size: 13px;
+.follow-names h4, .message-names div a h4 {
     font-weight: 900;
     overflow: hidden;
     white-space: nowrap;
@@ -813,7 +814,7 @@ textarea {
 }
 
 
-.follow-names h5:hover {
+.follow-names h4:hover {
     text-decoration: underline;
 }
 
@@ -887,10 +888,15 @@ textarea {
 }
 
 
+.gold {
+    color: gold;
+}
+
+
 /* ----------------Message section---------------- */
 #msg {
     position: fixed;
-    bottom: -0.7rem;
+    bottom: -28rem;
     right: 1rem;
     width: 30%;
     height: 500px;
@@ -904,7 +910,7 @@ textarea {
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
     #msg {
         display: none;
     }
@@ -974,23 +980,9 @@ textarea {
 .message-names div {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     align-items: center;
     gap: 0.5rem;
-    width: 90%;
-}
-
-
-.message-names a {
-    overflow: hidden;
-    color: #fff;
-}
-
-.message-names h4 {
-    font-weight: 900;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 90%;
 }
 
 
@@ -1009,11 +1001,8 @@ textarea {
     flex-direction: row;
     align-items: center;
     gap: 0.2rem;
-}
-
-
-.message-names div a p {
-    width: 100%;
+    overflow: hidden;
+    color: #fff;
 }
 
 
@@ -1022,13 +1011,10 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
+.chats {
+    height: fit-content;
+    padding: 1.4rem 0 2.1rem 1.8rem;
+}
 
 
 
