@@ -17,7 +17,6 @@
             <li>
                 <a href="#">
                     <i class="fab fa-twitter fa-2x"></i>
-                    <span></span>
                 </a>
             </li>
             <li>
@@ -75,18 +74,23 @@
                 </a>
             </li>
             <li>
-                <a href="#">
-                    <i class="fa fa-plus-circle"></i>
-                    <span>More</span>
-                </a>
+                <div class="post-tweet-wider" onclick="addTweetWider()">
+                    <i class="fa fa-plus fa-2x"></i>
+                </div>
+                <button class="tweet-btn">
+                    <h4>Tweet</h4>
+                </button>
             </li>
             <li>
                 <a href="#" class="accnt">
-                    <img src="./img/me.jpg" alt="">
-                    <span>
-                        <p>Emeka</p>
-                        <p class="unique-username">@Emekanaki</p>
-                    </span>
+                    <div>
+                        <img src="./img/me.jpg" alt="">
+                        <span>
+                            <p>Emeka</p>
+                            <p class="unique-username">@Emekanaki</p>
+                        </span>
+                        <i class="fa fa-ellipsis-h"></i>
+                    </div>
                 </a>
             </li>
         </ul>
@@ -187,6 +191,7 @@
                             <a href=""><h4>ARISE NEWS</h4></a>
                             <img id="blue-tick" src="./img/gold-tick.png" alt="">
                             <a href=""><p>@ARISEtv</p></a>
+                            <div></div>
                             <a href=""><p>36m</p></a>
                         </div>
                         <i class="fa fa-ellipsis-h more"></i>
@@ -210,6 +215,7 @@
                             <a href=""><h4>Nigerian Army</h4></a>
                             <img id="blue-tick" src="./img/silver-tick.png" alt="">
                             <a href=""><p>@HQNigerianArmy</p></a>
+                            <div></div>
                             <a href=""><p>3d</p></a>
                         </div>
                         <i class="fa fa-ellipsis-h more"></i>
@@ -229,7 +235,7 @@
 
 
         <!-- ---- Post tweet shortcut for mobile view----- -->
-        <div id="postTweet" onclick="addTweet()">
+        <div class="post-tweet" onclick="addTweet()">
             <i class="fa fa-plus fa-2x"></i>
         </div>
     </section>

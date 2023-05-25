@@ -44,17 +44,6 @@ i, a, button {
 }
 
 
-.sidebar a {
-    position: relative;
-    left: 30%;
-    color: var(--twitter-color);
-    display: table;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
 .sidebar ul {
     display: flex;
     flex-direction: column;
@@ -63,10 +52,45 @@ i, a, button {
 }
 
 
+.sidebar a, .tweet-btn, .post-tweet-wider {
+    position: relative;
+    left: 30%;
+    color: var(--twitter-color);
+    display: table;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+
 .sidebar a:hover , #logo:hover {
     border-radius: 30px;
     background-color: #353434;
     transition: 0.2s;
+}
+
+
+.tweet-btn {
+    width: 180px;
+    background: var(--twitter-color);
+}
+
+.tweet-btn h4 {
+    color: #fff;
+    text-align: center;
+    padding: 0.3rem 0;
+    word-spacing: 1px;
+}
+
+
+.post-tweet-wider {
+    display: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+    background: var(--twitter-color);
+    cursor: pointer;
+    margin-left: 8%;
 }
 
 
@@ -84,8 +108,11 @@ i, a, button {
 
 
 @media (max-width: 1342px) {
-    .sidebar span, .accnt span{
+    .sidebar span, .accnt span, .tweet-btn{
         display: none;
+    }
+    .post-tweet-wider {
+        display: inline-block;
     }
     .sidebar a {
         left: 40%;
@@ -114,6 +141,15 @@ i, a, button {
 }
 
 
+.accnt div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.2rem;
+}
+
+
 .accnt img,.accnt-img {
     border-radius: 50%;
     width: 30px;
@@ -124,20 +160,33 @@ i, a, button {
 .accnt span {
     display: flex;
     flex-direction: column;
-    margin-top: -2.4rem;
-    margin-left: 3.2rem;
+    align-items: flex-start;
+    margin-left: 0;
 }
 
 
 .unique-username {
     color: var(--text-color);
     font-size: smaller;
-    margin-left: -1px;
 }
+
+
+.accnt div i {
+    width: 20%;
+}
+
+
+.accnt div i:hover {
+    color: var(--twitter-color);
+}
+
 
 
 @media (max-width: 1342px) {
     .accnt span {
+        display: none;
+    }
+    .accnt div i {
         display: none;
     }
 }
@@ -295,6 +344,11 @@ i, a, button {
     margin-top: 1rem;
     background: var(--twitter-color);
     border-radius: 3px;
+}
+
+
+.algo a:nth-child(1) {
+    color: #fff;
 }
 
 
@@ -604,28 +658,23 @@ textarea {
     cursor: pointer;
 }
 
-
-#postTweet {
+/* ---------------- Post tweet shortcut for mobile view----------------  */
+.post-tweet {
     display: none;
 }
 
 
 @media (max-width: 600px) {
-    #postTweet {
+    .post-tweet {
         display: block;
         padding: 0.5rem 0.5rem;
         border-radius: 50%;
         position: fixed;
         bottom: 6rem;
-        left: 84%;
+        left: 85%;
         background: var(--twitter-color);
         cursor: pointer;
     }
-}
-
-
-#postTweet i {
-    color: #000;
 }
 
 
