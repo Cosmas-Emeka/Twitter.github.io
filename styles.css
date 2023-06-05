@@ -939,8 +939,10 @@ textarea {
 }
 
 
-.gold {
+
+.footer a:nth-child(7) {
     color: gold;
+    text-decoration: none;
 }
 
 
